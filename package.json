@@ -9,7 +9,13 @@
     "start": "node ./dist",
     "dev": "ts-node ./src",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest ./src"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.ts"]
   },
   "dependencies": {
     "typescript": "^4.4.3"
