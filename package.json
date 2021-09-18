@@ -5,7 +5,19 @@
   "repository": "https://github.com/zfchung/tdd-kata-18-Sep-2021.git",
   "author": "ZF Chung (Zack) <zfchung1@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./dist",
+    "dev": "ts-node ./src",
+    "build": "tsc",
+    "test": "jest"
+  },
   "dependencies": {
     "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.2.0",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1"
   }
 }
